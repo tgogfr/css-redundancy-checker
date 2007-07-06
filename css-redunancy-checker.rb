@@ -29,10 +29,8 @@ begin
   things = []
   
   if File.directory?(source)
-    puts "It's a directory"
     things = Dir["#{source}*.html"]
   elsif File.extname(source).eql?(".txt")
-    puts "It's a file"
     file = File.new(source, "r")
     file.each_line {|line| things <<line}
   end
