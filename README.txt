@@ -1,6 +1,6 @@
 = CSS Redundancy Checker
 
-A simple script that, given a CSS stylesheet and either a .txt file listing URLs of HTML files, or a directory of HTML files, will iterate over them all and list the CSS statements in the stylesheet which are never called in the HTML.
+A simple script that, given a CSS stylesheet and either a .txt file listing URLs of HTML files, or a directory of HTML files, will iterate over them all and list the CSS selectors in the stylesheet which are never called in the HTML.
 
 Basically, it helps you keep your CSS files relevant and compact. And it's reasonably accurate.
 
