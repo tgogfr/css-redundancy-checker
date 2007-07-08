@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby -wKU
 
 require 'rubygems'
+require 'open-uri'
 require 'hpricot'
 
 begin
