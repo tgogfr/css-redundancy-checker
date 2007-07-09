@@ -54,7 +54,7 @@ begin
   puts "-------------"
   
   # print all the selectors that are not used anywhere.
-  results.select {|sel, count| count.eql? 0}.each do |selector, count|
+  results.sort_by {|sel, count| sel}.select {|sel, count| count.eql? 0}.each do |selector, count|
     puts selector
   end
   puts ""
