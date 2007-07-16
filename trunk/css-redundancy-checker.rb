@@ -33,7 +33,7 @@ begin
     things = Dir["#{source}*.html"]
   elsif File.extname(source).eql?(".txt")
     file = File.new(source, "r")
-    file.each_line {|line| things <<line}
+    file.each_line {|line| things << line.strip}
   end
   
   things.each do |file|
