@@ -15,7 +15,7 @@ begin
   # process our css file into a nice array of selectors
   content.gsub!(/\/\*.*?\*\//m, "") # strip the comments
   content.gsub!(/\{.*?\}/m, "") # strip the definitions
-  content.gsub!(", ", "\r\n") # one selector per line.
+  content.gsub!(",", "\r\n") # one selector per line.
   content.gsub!(/^\s+$/, "") # strip lines containing just whitespace
   content.gsub!(/[\r\n]+/, "\n") # just one new line, thanks.
   content.gsub!(/:.*$/, "")
